@@ -24,20 +24,6 @@ export default {
     };
   },
   methods: {
-    async getTweet() {
-      const resData = await this.$axios.get(
-        "http://127.0.0.1:8000/api/post/"
-      );
-      this.tweetLists = resData.data.data;
-    },
-    async insertTweet() {
-      const sendData = {
-        text:this.newTweet
-      };
-      await this.$axios.post("http://127.0.0.1:8000/api/post/", sendData);
-      this.getTweet();
-    },
-
     async getComment() {
       const resData = await this.$axios.get(
         "http://127.0.0.1:8000/api/comment/"

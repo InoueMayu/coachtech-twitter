@@ -32,7 +32,7 @@
         <td><button @click="deleteTweet(item.id)">削除</button></td>
         <td><button>いいね</button></td>
         <td>
-          <nuxt-link :to="`/users/posts/${item.text}`">comment</nuxt-link>
+          <nuxt-link :to="`/users/posts/comments/${item.text}`">comment</nuxt-link>
 
         </td>
       </tr>
