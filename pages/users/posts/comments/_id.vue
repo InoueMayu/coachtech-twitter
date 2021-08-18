@@ -36,7 +36,7 @@ export default {
       };
       await this.$axios.post("http://127.0.0.1:8000/api/comment/", sendData);
       this.getComment();
-      await this.$axios.get('users/ + id')
+      await this.$axios.get("http://127.0.0.1:8000/api/user");
     },
 
     async deleteComment(id) {
